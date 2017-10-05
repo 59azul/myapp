@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Customers - Node.js</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        $(document).ready(function () { checkId(); });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="page-header">
+            <h2> Customers</h2>
+        </div>
+        <div class="page-data">
+
+            <form name="customerForm" method="post" action="">
+                <table cellpadding="11">
+                    <tr>
+                        <td class="label">Name</td>
+                        <td>: <input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label" valign="top">Address</td>
+                        <td valign="top">: <textarea name="address" required cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email</td>
+                        <td>: <input type="text" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Phone</td>
+                        <td>: <input type="text" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label"></td>
+                        <td>
+                            &nbsp;
+                            <!-- <input type="submit" name="submit" value="Save"> -->
+                            <input type="button" name="save" value="Save" class="save" onClick="saveCustomer()">
+                            <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
